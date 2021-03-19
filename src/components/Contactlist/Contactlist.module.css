@@ -1,0 +1,36 @@
+.contactsUl {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 1px solid powderblue;
+  width: 300px;
+  margin: 0 auto;
+  color: blue;
+}
+.contactsUl li{
+  display: flex;
+  margin: 20px;
+}
+
+.enter{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 250ms linear;
+}
+
+.enterActive{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.exit{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms linear;
+}
+
+.exitActive{
+  opacity: 0;
+  transform: translateX(-100%);
+}
